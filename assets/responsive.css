@@ -1,0 +1,483 @@
+@media (max-width: 599px) {
+
+    /* ---------------- HEADER FIX ---------------- */
+    .header {
+        padding: 0 12px;
+        justify-content: space-between !important;
+        align-items: center;
+        width: 100%;
+    }
+
+    .header img {
+        width: 120px;
+    }
+
+    .controls {
+        gap: 10px;
+    }
+
+    .language-dropdown {
+        width: 100px;
+        height: 30px;
+        padding-left: 12px;
+        padding-right: 22px;
+        font-size: 12px;
+    }
+
+    .language-dropdown::before {
+        left: 75px !important;
+        font-size: 10px;
+    }
+
+    .sign-btn {
+        height: 30px;
+        font-size: 12px;
+        padding: 0 12px;
+    }
+
+    /* ----- FINAL NETFLIX-STYLE POLISHED HERO (MOBILE) ----- */
+    @media (max-width: 599px) {
+
+        .hero {
+            height: 88vh;
+            /* Netflix uses 85–90vh */
+            background-position: center top;
+            background-size: cover;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        /* remove container padding so hero becomes full-bleed */
+        .hero .container {
+            padding: 0 !important;
+            margin: 0 !important;
+            max-width: 100%;
+        }
+
+        .hero-content {
+            width: 100%;
+            padding: 0 22px;
+            /* exact Netflix side padding */
+            margin-top: -10px;
+            /* lift content slightly */
+        }
+
+        .hero-overlay {
+            background-image: linear-gradient(to top,
+                    rgba(0, 0, 0, 0.85) 0%,
+                    rgba(0, 0, 0, 0.45) 50%,
+                    rgba(0, 0, 0, 0.8) 100%);
+        }
+
+        .hero-content h1 {
+            font-size: 30px;
+            line-height: 1.15;
+            font-weight: 900;
+            margin-bottom: 10px;
+        }
+
+        .hero-content h2 {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 14px;
+        }
+
+        .hero-content p {
+            font-size: 14px;
+            margin-bottom: 14px;
+        }
+
+        /* email form */
+        .email-form {
+            flex-direction: column;
+            width: 100%;
+            gap: 12px;
+        }
+
+        .email-form input[type="email"] {
+            width: 100%;
+            height: 50px;
+            font-size: 15px;
+        }
+
+        .btn-red-large {
+            width: 100%;
+            height: 50px;
+            font-size: 18px;
+            padding: 6px 20px;
+        }
+    }
+
+
+
+    /* ---------------- HERO FIX ---------------- */
+    .hero {
+        height: 75vh;
+        background-position: center top;
+        padding-top: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-content {
+        margin-top: 0;
+        padding: 0 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .hero-content h2 {
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 14px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .email-form {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .email-form input[type="email"] {
+        width: 100%;
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .btn-red-large {
+        width: 100%;
+        height: 50px;
+        font-size: 18px;
+        padding: 6px 20px;
+    }
+
+
+    /* ---------------- TRENDING FIX ---------------- */
+    .trending h2 {
+        padding-left: 20px;
+    }
+
+    .thumbnail-row {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        gap: 12px;
+        padding-left: 20px;
+        padding-right: 20px;
+        scroll-behavior: smooth;
+    }
+
+    .thumbnail-number {
+        font-size: 60px;
+        top: 30%;
+        left: -5px;
+    }
+
+    .thumbnail-poster {
+        width: 120px;
+        height: 170px;
+        margin-left: 20px;
+    }
+
+    .scroll-arrow {
+        display: none !important;
+    }
+
+
+    /* ---------------- REASONS FIX (1 column) ---------------- */
+    .cards-container {
+        flex-direction: column;
+        gap: 18px;
+        padding: 0 20px;
+    }
+
+    .card {
+        min-height: auto;
+        padding: 18px;
+    }
+
+    .card h3 {
+        font-size: 20px;
+    }
+
+    .card p {
+        font-size: 15px;
+    }
+
+    .card .icons,
+    .card .icons-1,
+    .card .icons-2,
+    .card .icons-3 {
+        font-size: 45px;
+    }
+
+
+    /* ---------------- FAQ ---------------- */
+    .faq h2 {
+        font-size: 22px;
+    }
+
+    .faq-question {
+        font-size: 1.1rem;
+        padding: 20px;
+    }
+
+    .faq-question::after {
+        right: 20px;
+        font-size: 28px;
+    }
+
+    .faq-answer p {
+        padding: 22px;
+        font-size: 16px;
+    }
+
+    .email-form-1 {
+        margin-top: 30px;
+        padding: 0 20px;
+    }
+
+    .email-form-1 .email-form-group {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+
+    .email-form-1 input[type="email"] {
+        width: 100%;
+        height: 50px;
+    }
+
+    .email-form-1 .btn-red-large {
+        width: 100%;
+        height: 50px;
+        font-size: 18px;
+    }
+
+
+    footer {
+        padding: 50px 0;
+    }
+
+    /* Remove container side padding */
+    .footer-container {
+        padding: 0 20px !important;
+        max-width: 100% !important;
+    }
+
+    /* Remove the side gap causing empty space */
+    .footer-links {
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Every footer column full width */
+    .footer-col {
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .footer-col ul {
+        padding-left: 0 !important;
+        margin-left: 0 !important;
+    }
+
+    .footer-col li {
+        margin-bottom: 12px;
+    }
+
+    .footer-col a {
+        font-size: 14px;
+    }
+
+    /* Align language dropdown left */
+    footer .language-dropdown {
+        margin-top: 20px;
+        width: 120px;
+    }
+
+    .footer-bottom {
+        margin-top: 25px;
+        font-size: 14px;
+    }
+}
+
+
+
+
+/* ======================================================
+            SMALL TABLETS 600–959px
+   ====================================================== */
+@media (min-width: 600px) and (max-width: 959px) {
+
+    .hero {
+        height: 85vh;
+        padding-top: 60px;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+    }
+
+    .hero-content h2 {
+        font-size: 18px;
+    }
+
+    .thumbnail-row {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        gap: 12px !important;
+        overflow-x: hidden !important; /* since we don't want scroll */
+        white-space: normal !important;
+    }
+
+    .thumbnail-poster {
+        width: 135px !important;
+        height: 190px !important;
+        margin-left: 18px !important;
+    }
+
+    .thumbnail-number {
+        font-size: 70px !important;
+        left: -6px !important;
+        top: 32% !important;
+    }
+
+    .thumbnail-item {
+        overflow: hidden !important;
+    }
+
+    .cards-container {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .card {
+        width: 48%;
+    }
+}
+
+
+
+/* ======================================================
+        TABLETS / SMALL LAPTOPS 960–1279px
+   ====================================================== */
+@media (min-width: 960px) and (max-width: 1279px) {
+
+    .hero {
+        height: 90vh;
+    }
+
+    .hero-content h1 {
+        font-size: 48px;
+    }
+
+    /* Disable scroll on desktop-like view */
+    .thumbnail-row {
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+        gap: 14px !important;
+        overflow-x: hidden !important;
+        white-space: normal !important;
+    }
+
+    .thumbnail-poster {
+        width: 150px !important;
+        height: 210px !important;
+        margin-left: 20px !important;
+    }
+
+    .thumbnail-number {
+        font-size: 80px !important;
+        left: -8px !important;
+    }
+
+    .thumbnail-item {
+        overflow: hidden !important;
+    }
+
+    .cards-container {
+        gap: 22px;
+    }
+
+    .card {
+        width: 48%;
+    }
+}
+
+
+
+/* ======================================================
+                DESKTOP 1280–1919px
+   ====================================================== */
+@media (min-width: 1280px) and (max-width: 1919px) {
+
+    .hero {
+        height: 100vh;
+    }
+
+    .hero-content h1 {
+        font-size: 56px;
+    }
+
+    /* NO SCROLL ON DESKTOP */
+    .thumbnail-row {
+        overflow-x: visible !important;
+        white-space: normal !important;
+    }
+}
+
+
+
+/* ======================================================
+                TV / LARGE SCREENS 1920px+
+   ====================================================== */
+@media (min-width: 1920px) {
+
+    .hero {
+        height: 100vh;
+        background-size: cover;
+    }
+
+    .hero-content h1 {
+        font-size: 70px;
+    }
+
+    .hero-content h2 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 20px;
+    }
+
+    .thumbnail-poster {
+        width: 200px;
+        height: 300px;
+    }
+
+    .card h3 {
+        font-size: 28px;
+    }
+
+    .card p {
+        font-size: 18px;
+    }
+}

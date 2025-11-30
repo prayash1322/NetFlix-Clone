@@ -1,6 +1,5 @@
 @media (max-width: 599px) {
 
-    /* ---------------- HEADER FIX ---------------- */
     .header {
         padding: 0 12px;
         justify-content: space-between !important;
@@ -35,12 +34,10 @@
         padding: 0 12px;
     }
 
-    /* ----- FINAL NETFLIX-STYLE POLISHED HERO (MOBILE) ----- */
     @media (max-width: 599px) {
 
         .hero {
             height: 88vh;
-            /* Netflix uses 85–90vh */
             background-position: center top;
             background-size: cover;
             padding: 0;
@@ -49,7 +46,6 @@
             justify-content: flex-start;
         }
 
-        /* remove container padding so hero becomes full-bleed */
         .hero .container {
             padding: 0 !important;
             margin: 0 !important;
@@ -59,9 +55,7 @@
         .hero-content {
             width: 100%;
             padding: 0 22px;
-            /* exact Netflix side padding */
             margin-top: -10px;
-            /* lift content slightly */
         }
 
         .hero-overlay {
@@ -89,7 +83,6 @@
             margin-bottom: 14px;
         }
 
-        /* email form */
         .email-form {
             flex-direction: column;
             width: 100%;
@@ -110,9 +103,6 @@
         }
     }
 
-
-
-    /* ---------------- HERO FIX ---------------- */
     .hero {
         height: 75vh;
         background-position: center top;
@@ -144,26 +134,29 @@
     }
 
     .email-form {
-        flex-direction: column;
-        gap: 12px;
         width: 100%;
+        display: flex;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 12px;
     }
 
     .email-form input[type="email"] {
-        width: 100%;
+        width: 100% !important;
         height: 50px;
-        font-size: 14px;
+        font-size: 15px;
     }
 
-    .btn-red-large {
-        width: 100%;
-        height: 50px;
+    .email-form .btn-red-large {
+        width: auto !important;
+        padding: 16px 26px !important;
         font-size: 18px;
-        padding: 6px 20px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        white-space: nowrap;
     }
 
-
-    /* ---------------- TRENDING FIX ---------------- */
     .trending h2 {
         padding-left: 20px;
     }
@@ -197,7 +190,6 @@
     }
 
 
-    /* ---------------- REASONS FIX (1 column) ---------------- */
     .cards-container {
         flex-direction: column;
         gap: 18px;
@@ -225,7 +217,6 @@
     }
 
 
-    /* ---------------- FAQ ---------------- */
     .faq h2 {
         font-size: 22px;
     }
@@ -272,13 +263,11 @@
         padding: 50px 0;
     }
 
-    /* Remove container side padding */
     .footer-container {
         padding: 0 20px !important;
         max-width: 100% !important;
     }
 
-    /* Remove the side gap causing empty space */
     .footer-links {
         flex-direction: column;
         gap: 8px;
@@ -287,7 +276,6 @@
         padding: 0;
     }
 
-    /* Every footer column full width */
     .footer-col {
         width: 100% !important;
         padding: 0 !important;
@@ -307,7 +295,6 @@
         font-size: 14px;
     }
 
-    /* Align language dropdown left */
     footer .language-dropdown {
         margin-top: 20px;
         width: 120px;
@@ -319,12 +306,6 @@
     }
 }
 
-
-
-
-/* ======================================================
-            SMALL TABLETS 600–959px
-   ====================================================== */
 @media (min-width: 600px) and (max-width: 959px) {
 
     .hero {
@@ -344,7 +325,7 @@
         padding-left: 20px !important;
         padding-right: 20px !important;
         gap: 12px !important;
-        overflow-x: hidden !important; /* since we don't want scroll */
+        overflow-x: hidden !important;
         white-space: normal !important;
     }
 
@@ -374,11 +355,6 @@
     }
 }
 
-
-
-/* ======================================================
-        TABLETS / SMALL LAPTOPS 960–1279px
-   ====================================================== */
 @media (min-width: 960px) and (max-width: 1279px) {
 
     .hero {
@@ -389,7 +365,6 @@
         font-size: 48px;
     }
 
-    /* Disable scroll on desktop-like view */
     .thumbnail-row {
         padding-left: 25px !important;
         padding-right: 25px !important;
@@ -422,11 +397,6 @@
     }
 }
 
-
-
-/* ======================================================
-                DESKTOP 1280–1919px
-   ====================================================== */
 @media (min-width: 1280px) and (max-width: 1919px) {
 
     .hero {
@@ -437,18 +407,12 @@
         font-size: 56px;
     }
 
-    /* NO SCROLL ON DESKTOP */
     .thumbnail-row {
         overflow-x: visible !important;
         white-space: normal !important;
     }
 }
 
-
-
-/* ======================================================
-                TV / LARGE SCREENS 1920px+
-   ====================================================== */
 @media (min-width: 1920px) {
 
     .hero {
